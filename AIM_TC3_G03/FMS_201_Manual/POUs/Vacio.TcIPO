@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <ImagePool Name="Vacio" Id="{2d95fc9e-1fac-4f8d-aed4-a369645f5b27}">
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="ImagePoolObject">
+          <v n="UniqueIdGenerator">"17"</v>
+          <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
+            <o>
+              <v n="BitmapID">"vacio"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|Imagenes\vacio.png"</v>
+              <v n="ItemID">3</v>
+            </o>
+            <o>
+              <v n="BitmapID">"onoff"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|Imagenes\onoff.png"</v>
+              <v n="ItemID">4</v>
+            </o>
+            <o>
+              <v n="BitmapID">""</v>
+              <v n="FileID">""</v>
+              <v n="ItemID">5</v>
+            </o>
+          </l>
+          <v n="GuidInit">{3a3e5f8b-6908-48ea-9c26-68f43b68e86b}</v>
+          <v n="GuidReInit">{7f126740-a2d5-4f2a-9cc7-75adcb1eb7fa}</v>
+          <v n="GuidExitX">{3f3a7a9f-1db9-4590-bae0-efd0fd240d7e}</v>
+          <v n="ValidIds">true</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="Boolean">System.Boolean</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="ImagePoolItem">{215b2719-0347-4e4d-ba85-8bcd66946f66}</Type>
+        <Type n="ImagePoolObject">{bb0b9044-714e-4614-ad3e-33cbdf34d16b}</Type>
+        <Type n="Int32">System.Int32</Type>
+        <Type n="String">System.String</Type>
+      </TypeList>
+    </XmlArchive>
+  </ImagePool>
+</TcPlcObject>

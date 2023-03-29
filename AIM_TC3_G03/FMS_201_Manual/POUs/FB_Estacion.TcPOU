@@ -602,6 +602,14 @@ END_VAR
         </XmlArchive>
       </SFC>
     </Implementation>
+    <Action Name="aPaleCodigo" Id="{1981cdec-f364-46d7-8928-81208a9a2e3d}">
+      <Implementation>
+        <ST><![CDATA[PaleCodigo.0 := PaleCodigoBit0;
+PaleCodigo.1 := PaleCodigoBit1;
+PaleCodigo.2 := PaleCodigoBit2;
+]]></ST>
+      </Implementation>
+    </Action>
     <ObjectProperties>
       <XmlArchive>
         <Data>

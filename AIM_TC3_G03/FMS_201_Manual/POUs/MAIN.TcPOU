@@ -4,7 +4,6 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	ESTACION: FB_Estacion;
-	//Comentario
 END_VAR
 ]]></Declaration>
     <Implementation>

@@ -16,6 +16,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"976"</v>
+              <v n="TextDefault">"ALARMA"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"789"</v>
               <v n="TextDefault">"Alimentador "</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -33,6 +38,11 @@
             <o>
               <v n="TextID">"339"</v>
               <v n="TextDefault">"ALIMENTADORA DE BASES"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"91"</v>
+              <v n="TextDefault">"ALIMENTAR"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -119,6 +129,17 @@ adelante"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"32"</v>
+              <v n="TextDefault">"DESPLAZAR"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"872"</v>
+              <v n="TextDefault">"Detector
+Presion"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"471"</v>
               <v n="TextDefault">"E+"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -144,8 +165,98 @@ adelante"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"727"</v>
+              <v n="TextDefault">"MARCHA"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"958"</v>
+              <v n="TextDefault">"MATERIAL"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"646"</v>
+              <v n="TextDefault">"Nº PALE"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"999"</v>
+              <v n="TextDefault">"OFF"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"328"</v>
+              <v n="TextDefault">"OK"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"374"</v>
+              <v n="TextDefault">"ON"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"582"</v>
+              <v n="TextDefault">"Pale
+Presencia"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"284"</v>
+              <v n="TextDefault">"Pulsador
+Emergencia"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"820"</v>
+              <v n="TextDefault">"Pulsador
+Marcha"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"285"</v>
+              <v n="TextDefault">"Pulsador
+Parada"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"165"</v>
+              <v n="TextDefault">"Pulsador Emergencia"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"392"</v>
+              <v n="TextDefault">"RETENEDOR"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"252"</v>
+              <v n="TextDefault">"Selector
+Manual"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"585"</v>
+              <v n="TextDefault">"SEPARADOR"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"442"</v>
+              <v n="TextDefault">"SUCCIONAR"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"391"</v>
               <v n="TextDefault">"V+"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"726"</v>
+              <v n="TextDefault">"VERIFICAR"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"661"</v>
+              <v n="TextDefault">"x"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
           </l>
