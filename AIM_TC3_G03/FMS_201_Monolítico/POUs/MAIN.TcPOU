@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-  <POU Name="MAIN" Id="{3e745d66-bce5-4a4f-9c7e-78379eb25dba}" SpecialFunc="None">
+  <POU Name="MAIN" Id="{2f866281-c418-478f-8ac3-95bfd1520d77}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	ESTACION: FB_Estacion;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[IF NOT ESTACION.SelectorManual THEN
+	ESTACION();
+END_IF]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
