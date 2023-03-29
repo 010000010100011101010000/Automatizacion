@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Clock" Id="{db36e242-9db8-4b81-abed-94cd6a30fc0a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Clock
+
+VAR_INPUT
+	EN: BOOL :=TRUE; 		// Entrada de nuestro temporizador
+	PT: TIME := T#500MS;	// Tiempo de nuestro temporizador
+END_VAR
+
+VAR_OUTPUT
+	ET: TIME;	// Sirve para consultar el tiempo que lleva la entrada PT
+	Q: BOOL;	// Salida de nuestro temporizador
+END_VAR
+VAR
+	Timer: TON;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Función de salida
+
+IF Timer.Q THEN
+	Q := NOT Q;
+END_IF
+
+// Bloque de función TON
+// Definimos la condición de entrada IN cuando EN esté TRUE (siempre) y no esté activa la salida del temporizador
+Timer(IN:= EN AND NOT Timer.Q, PT := PT, ET => ET);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
