@@ -822,9 +822,9 @@
                         </o>
                       </l>
                     </o>
-                    <v n="SignatureName">"Visu_ToggleInput"</v>
-                    <v n="Name">"Toggle"</v>
-                    <v n="Description">"Configuración de conmutación una variable booleana"</v>
+                    <v n="SignatureName">"Visu_TapInput"</v>
+                    <v n="Name">"Tap"</v>
+                    <v n="Description">"Configure the tapping of a Boolean variable"</v>
                   </o>
                 </a>
                 <l n="Elements" t="ArrayList" />
@@ -1659,7 +1659,7 @@
                     </o>
                     <o>
                       <v n="Id">4110469609L</v>
-                      <v n="Value">"SEL(MAIN.ESTACION.DescargadorAtras AND MAIN.ESTACION.VerticalAbajo, 2, 0)"</v>
+                      <v n="Value">"SEL(MAIN.ESTACION.DescargadorDetras AND MAIN.ESTACION.VerticalAbajo, 2, 0)"</v>
                     </o>
                   </l>
                 </o>
@@ -1997,7 +1997,7 @@
                     </o>
                     <o>
                       <v n="Id">4110469609L</v>
-                      <v n="Value">"SEL((MAIN.ESTACION.DescargadorAtras AND MAIN.ESTACION.VerticalArriba), 2, 0)"</v>
+                      <v n="Value">"SEL((MAIN.ESTACION.DescargadorDetras AND MAIN.ESTACION.VerticalArriba), 2, 0)"</v>
                     </o>
                   </l>
                 </o>
@@ -2107,7 +2107,7 @@
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">292</v>
+                      <v n="Value">295</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -2142,7 +2142,7 @@
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">317</v>
+                      <v n="Value">320</v>
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
@@ -2166,7 +2166,7 @@
                     </o>
                     <o>
                       <v n="Id">4110469609L</v>
-                      <v n="Value">"SEL(MAIN.ESTACION.DescargadorAdelante AND MAIN.ESTACION.VerticalArriba, 2, 0)"</v>
+                      <v n="Value">"SEL(MAIN.ESTACION.DescargadorDelante AND MAIN.ESTACION.VerticalArriba, 2, 0)"</v>
                     </o>
                   </l>
                 </o>
@@ -2335,7 +2335,7 @@
                     </o>
                     <o>
                       <v n="Id">4110469609L</v>
-                      <v n="Value">"SEL(MAIN.ESTACION.DescargadorAdelante AND MAIN.ESTACION.VerticalAbajo, 2, 0)"</v>
+                      <v n="Value">"SEL(MAIN.ESTACION.DescargadorDelante AND MAIN.ESTACION.VerticalAbajo, 2, 0)"</v>
                     </o>
                   </l>
                 </o>
@@ -3910,7 +3910,11 @@
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
-                      <v n="Value">true</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"MAIN.ESTACION.CintaMotorInvierte"</v>
                     </o>
                   </l>
                 </o>
@@ -4544,7 +4548,7 @@
                     </o>
                     <o>
                       <v n="Id">2880254039L</v>
-                      <v n="Value">"NotActivated(main.ESTACION.AlimentadorDelante)"</v>
+                      <v n="Value">"not(main.ESTACION.AlimentadorDelante)"</v>
                     </o>
                   </l>
                 </o>
@@ -4927,9 +4931,9 @@
                         </o>
                       </l>
                     </o>
-                    <v n="SignatureName">"Visu_TapInput"</v>
-                    <v n="Name">"Tap"</v>
-                    <v n="Description">"Configuración del palpado de una variable booleana"</v>
+                    <v n="SignatureName">"Visu_ToggleInput"</v>
+                    <v n="Name">"Toggle"</v>
+                    <v n="Description">"Configure the toggling of a Boolean variable"</v>
                   </o>
                 </a>
                 <l n="Elements" t="ArrayList" />
@@ -5547,11 +5551,11 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">206</v>
+                      <v n="Value">205</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">292</v>
+                      <v n="Value">290</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -5590,11 +5594,11 @@
                     </o>
                     <o>
                       <v n="Id">550940142L</v>
-                      <v n="Value">227</v>
+                      <v n="Value">226</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">310</v>
+                      <v n="Value">308</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -5618,7 +5622,7 @@
                     </o>
                     <o>
                       <v n="Id">2880254039L</v>
-                      <v n="Value">"NotActivated(main.ESTACION.PresenciaBaseAlimentador)"</v>
+                      <v n="Value">"not(main.ESTACION.PresenciaBaseAlimentador)"</v>
                     </o>
                   </l>
                 </o>
@@ -6687,7 +6691,7 @@
                     </o>
                     <o>
                       <v n="Id">2880254039L</v>
-                      <v n="Value">"not(MAIN.ESTACION.AlimentadorDetras)"</v>
+                      <v n="Value">"(not(MAIN.ESTACION.AlimentadorDetras) OR not(main.ESTACION.PresenciaBaseAlimentador))"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -7324,7 +7328,7 @@
                     </o>
                     <o>
                       <v n="Id">1999528970L</v>
-                      <v n="Value">"MAIN.ESTACION.PulsadorParada"</v>
+                      <v n="Value">"not(MAIN.ESTACION.PulsadorParada)"</v>
                     </o>
                     <o>
                       <v n="Id">3719097617L</v>
@@ -8944,11 +8948,7 @@ Presencia"</v>
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
-                      <v n="Value">"Nº PALE"</v>
-                    </o>
-                    <o>
-                      <v n="Id">823443203L</v>
-                      <v n="Value">"646"</v>
+                      <v n="Value">"%d"</v>
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
@@ -8957,6 +8957,14 @@ Presencia"</v>
                     <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"not(MAIN.ESTACION.PalePresencia)"</v>
+                    </o>
+                    <o>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"699"</v>
                     </o>
                   </l>
                 </o>
@@ -8972,6 +8980,177 @@ Presencia"</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">181</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2341735680L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-2830136</v>
+                          <v n="CanonicalName">"Element-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">438423234L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-65536</v>
+                          <v n="CanonicalName">"Element-Alarm-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value" t="Int16">1</v>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4134387352L</v>
+                      <v n="Value">"NONE"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1603690730L</v>
+                      <v n="Value">"Arial"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4253639993L</v>
+                      <v n="Value" t="Int16">12</v>
+                    </o>
+                    <o>
+                      <v n="Id">2729990903L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1213979116L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3488306084L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">"&lt;toggle/tap variable&gt;"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3719097617L</v>
+                      <v n="Value">0</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">745</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">430</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">37</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">24</v>
+                    </o>
+                    <o>
+                      <v n="Id">1651471674L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">3549563837L</v>
+                      <v n="Value">"ANISOTROPIC"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3729828405L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleFont">
+                        <o>
+                          <v n="FontStyle">0</v>
+                          <v n="AdditionalFontStyle" t="UInt16">0</v>
+                          <v n="ExplicitColor">-16777216</v>
+                          <v n="CanonicalName">"Font-Standard"</v>
+                          <v n="FontName">"Arial"</v>
+                          <v n="FontSize">12</v>
+                          <v n="ScriptIdentification">0</v>
+                          <v n="DoubleFontSize" t="Double">0</v>
+                          <o n="NamedColor" t="NamedStyleColor">
+                            <v n="Color">-16777216</v>
+                            <v n="CanonicalName">"Font-Default-Color"</v>
+                          </o>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">550940142L</v>
+                      <v n="Value">763</v>
+                    </o>
+                    <o>
+                      <v n="Id">1473355128L</v>
+                      <v n="Value">442</v>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3332245745L</v>
+                      <v n="Value">"VisuSymbols.Symbols.ArrowBoldLeft"</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"not(MAIN.ESTACION.CintaMotorInvierte)"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">false</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Image"</v>
+                <v n="VisualElementTypeName">"VisuFbElemImage"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_184"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{40ed34fd-c4c1-43bb-86d3-e5eee55cf9af}</v>
+                <v n="VisualElementOwningObjectGuid">{6002bc90-4c57-4210-a85f-c15319348dec}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">0</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
             </l>
@@ -9123,7 +9302,7 @@ Presencia"</v>
             </o>
             <v n="DialogDut">{4a6b3185-ba65-4388-87eb-e79f85df51e5}</v>
           </o>
-          <v n="LastUsedIdForIdentifier">182</v>
+          <v n="LastUsedIdForIdentifier">184</v>
           <o n="TextDocument" t="TextDocument">
             <a n="TextLines" cet="TextLine">
               <o>
