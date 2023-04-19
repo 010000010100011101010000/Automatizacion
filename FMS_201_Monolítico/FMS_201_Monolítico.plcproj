@@ -2,7 +2,7 @@
   <PropertyGroup>
     <FileVersion>1.0.0.0</FileVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3d6f0bfa-ca68-48a3-b005-d481165e0cf8}</ProjectGuid>
+    <ProjectGuid>{9c48e9d4-71d5-4f3b-ab81-ed5a8c96df35}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
     <DownloadApplicationInfo>true</DownloadApplicationInfo>
     <WriteProductVersion>true</WriteProductVersion>
