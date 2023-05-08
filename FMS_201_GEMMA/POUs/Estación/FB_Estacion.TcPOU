@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Estacion" Id="{c498c908-a5a7-4a03-85c1-aa9d436ef428}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Estacion
+VAR_INPUT
+	
+	// Variables de control
+	EstadoPausa: BOOL;
+	EstadoReinicia: BOOL;
+	UnidadesSolicitadas: UINT := 3;
+	TpoEstabilidad: TIME := T#500MS;
+	
+END_VAR
+VAR_OUTPUT
+	
+	// Parámetros
+	CondicionInicial: BOOL;
+	UnidadesPendientes: UINT;
+	UnidadesRealizadas: UINT;
+	
+	// Entradas comunes
+	PulsadorEmergencia AT %I*: BOOL;
+    SelectorManual AT %I*: BOOL;
+    PulsadorMarcha AT %I*: BOOL;
+    PulsadorParada AT %I*: BOOL := TRUE; // Contacto normalmente cerrado
+    EstacionConectada AT %I*: BOOL := TRUE;
+    DetectorPresion AT %I*: BOOL := TRUE;
+	
+	PalePresencia AT %I*: BOOL;
+    PaleCodigoBit0 AT %I*: BOOL;
+    PaleCodigoBit1 AT %I*: BOOL;
+    PaleCodigoBit2 AT %I*: BOOL;
+	
+	// Entradas específicas
+	DescargadorDetras AT %I*: BOOL;
+	DescargadorDelante AT %I*: BOOL;
+	VerticalArriba AT %I*: BOOL;
+	VerticalAbajo AT %I*: BOOL;
+	VerificadorArriba AT %I*: BOOL;
+	VerificadorAbajo AT %I*: BOOL;
+	DesplazadorDetras AT %I*: BOOL;
+	AlimentadorDetras AT %I*: BOOL;
+	AlimentadorDelante AT %I*: BOOL;
+	VacioDescargador AT %I*: BOOL;
+	PresenciaBaseAlimentador AT %I*:BOOL;
+END_VAR
+VAR
+	ModoAnterior: E_GEMMA;	
+
+	// Bloques funcionales
+	CLK: FB_Clock;
+    Director: FB_Director;
+	Coordinador: FB_Coordinador_SFC;
+	Restaurar: FB_EstacionRestaurar_SFC;
+    Preparar: FB_EstacionPreparar_SFC;
+    Finalizar: FB_EstacionFinalizar_SFC;
+	SituarBase: FB_1_SituarBase_SFC;
+	AlimentarBase: FB_2_AlimentarBase_SFC;
+	VerificarPale: FB_3_VerificarPale_SFC;
+	InsertarBasePale: FB_4_InsertarBasePale_SFCC;
+	TransferirBase: FB_5_TransferirBase_SFC;
+	
+	
+	// Salidas comunes
+	DesconectaEstacion AT %Q*: BOOL;
+    LamparaAlarma AT %Q*: BOOL;
+    LamparaMarcha AT %Q*: BOOL;
+	LamparaFaltaMaterial AT %Q*: BOOL;
+    AvisadorSonoro AT %Q*: BOOL;
+
+    CintaMotorActiva AT %Q*: BOOL;
+    CintaMotorInvierte AT %Q*: BOOL;
+    CintaRetenedorBaja AT %Q*: BOOL;
+    CintaSeparadorSube AT %Q*: BOOL;
+	
+	// Salidas específicas
+	DescargadorAtras AT %Q*: BOOL;
+	DescargadorAdelante AT %Q*: BOOL;
+	DescargadorBaja AT %Q*: BOOL;
+	RechazadorAdelante AT %Q*: BOOL;
+	VerificadorBaja AT %Q*: BOOL;
+	DesplazadorAdelante AT %Q*: BOOL;
+	AlimentadorAdelante AT %Q*: BOOL;
+	EyectorSucciona AT %Q*: BOOL;
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// MODO AUTOMÁTICO
+CLK();
+
+Director(
+    CondicionInicial := CondicionInicial,
+    CondicionMarcha := (UnidadesSolicitadas > 0) AND CondicionInicial,
+    Emergencia := PulsadorEmergencia,
+    Finalizada := Finalizar.Done,
+    FinTarea := (UnidadesPendientes = 0),
+    FinCiclo := Coordinador.Done,
+    Manual := SelectorManual,
+    Marcha := PulsadorMarcha,
+    ParaCiclo := NOT PulsadorParada,
+    Preparada := Preparar.Done,
+    Reinicia := EstadoReinicia
+    );
+
+IF (Director.Modo <> E_GEMMA.F4) THEN
+	//Bloques funcionales
+	Restaurar(
+        SFCPause := NOT EstadoReinicia AND EstadoPausa,
+        SFCReset := EstadoReinicia,
+        Ack := TRUE ,
+        Execute := (Director.Modo = E_GEMMA.A6) AND PulsadorMarcha,
+        DescargadorDetras := DescargadorDetras,
+        );
+        
+    Preparar(
+        SFCPause := NOT EstadoReinicia AND EstadoPausa,
+        SFCReset := EstadoReinicia,
+        Ack := (Director.Modo <> E_GEMMA.F2),
+        Execute := (Director.Modo = E_GEMMA.F2),
+        );
+
+    Finalizar(
+        SFCPause := NOT EstadoReinicia AND EstadoPausa,
+        SFCReset := EstadoReinicia,
+        Ack := (Director.Modo <> E_GEMMA.F3),
+        Execute := (Director.Modo = E_GEMMA.F3),
+        );
+	
+	Coordinador(
+		UnidadesPendientes := UnidadesPendientes,
+		UnidadesRealizadas := UnidadesRealizadas,
+		SFCPause := NOT EstadoReinicia AND EstadoPausa,
+		SFCReset := EstadoReinicia,
+		Ack := TRUE,
+		Execute := CondicionInicial AND (UnidadesSolicitadas > 0) AND PulsadorMarcha,
+		BaseSituada := SituarBase.Done,
+		PaleSituado := AlimentarBase.Done,
+		PaleVerificado := VerificarPale.Done,
+		PaleDesechado := VerificarPale.DoneIncorrecto,
+		PaleTransferido := InsertarBasePale.Done,
+		BaseTransferida := TransferirBase.Done,
+		CondicionInicial := CondicionInicial,
+		UnidadesSolicitadas := UnidadesSolicitadas
+	);
+		
+	SituarBase(
+		SFCPause := NOT EstadoReinicia AND EstadoPausa,
+		SFCReset := EstadoReinicia,
+		Ack := NOT Coordinador.SituaBase,
+		Execute := Coordinador.SituaBase,
+		PalePresencia := PalePresencia
+	);
+		
+	AlimentarBase(
+		SFCPause := NOT EstadoReinicia AND EstadoPausa,
+		SFCReset := EstadoReinicia,
+		Ack := NOT Coordinador.SituaPale,
+		Execute := Coordinador.SituaPale,
+		PresenciaBaseAlimentador := PresenciaBaseAlimentador,
+		AlimentadorDelante := AlimentadorDelante,
+		AlimentadorDetras := AlimentadorDetras,
+	);
+	
+	VerificarPale(
+		SFCPause := NOT EstadoReinicia AND EstadoPausa,
+		SFCReset := EstadoReinicia,
+		Ack := NOT Coordinador.VerificaPale,
+		Execute := Coordinador.VerificaPale,
+		VerificadorAbajo := VerificadorAbajo,
+		VerificadorArriba := VerificadorArriba,
+		DesplazadorDetras := DesplazadorDetras,
+	);
+	
+	InsertarBasePale(
+		SFCPause := NOT EstadoReinicia AND EstadoPausa,
+		SFCReset := EstadoReinicia,
+		Ack := NOT Coordinador.TransfierePale,
+		Execute := Coordinador.TransfierePale,
+		VerticalAbajo := VerticalAbajo,
+		VacioDescargador := VacioDescargador,
+		VerticalArriba := VerticalArriba,
+		DescargadorDelante := DescargadorDelante,
+		DescargadorDetras := DescargadorDetras
+	);
+	
+	TransferirBase(
+		SFCPause := NOT EstadoReinicia AND EstadoPausa,
+		SFCReset := EstadoReinicia,
+		Ack := NOT Coordinador.TransfiereBase,
+		Execute := Coordinador.TransfiereBase,
+	);
+	
+	// Acciones
+	
+	// DesconectaEstacion :=
+	LamparaAlarma := Coordinador.LamparaAlarma;
+	LamparaMarcha := Coordinador.LamparaMarcha;
+	// AvisadorSonoro :=
+	
+	CintaMotorActiva := NOT EstadoPausa AND (SituarBase.CintaMotorActiva OR TransferirBase.CintaMotorActiva);
+	// CintaMotorInvierte :=
+	CintaRetenedorBaja := TransferirBase.CintaRetenedorBaja;
+	CintaSeparadorSube := TransferirBase.CintaSeparadorSube;
+	DescargadorAtras := InsertarBasePale.DescargadorAtras OR Restaurar.DescargadorAtras;
+	DescargadorAdelante := InsertarBasePale.DescargadorAdelante;
+	DescargadorBaja := InsertarBasePale.DescargadorBaja;
+	RechazadorAdelante := VerificarPale.RechazadorAdelante;
+	VerificadorBaja := VerificarPale.VerificadorBaja;
+	DesplazadorAdelante := VerificarPale.DesplazadorAdelante;
+	AlimentadorAdelante := AlimentarBase.AlimentadorAdelante;
+	EyectorSucciona := InsertarBasePale.EyectorSucciona;
+
+END_IF
+
+// Parámetros de salida
+CondicionInicial := EstacionConectada AND AlimentadorDetras AND VerificadorArriba AND DesplazadorDetras AND DescargadorDetras AND VerticalArriba AND NOT VacioDescargador;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

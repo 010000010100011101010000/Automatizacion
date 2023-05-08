@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.40">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.35">
 	<ImageDatas>
 		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
@@ -20,173 +20,254 @@
 				<Task Id="6" Priority="23" CycleTime="100000" AmsPort="353" AdtTasks="true">
 					<Name>PlcTask3</Name>
 				</Task>
+				<Task Id="7" Priority="24" CycleTime="100000" AmsPort="354" AdtTasks="true">
+					<Name>PlcTask4</Name>
+				</Task>
+				<Task Id="8" Priority="25" CycleTime="100000" AmsPort="355" AdtTasks="true">
+					<Name>PlcTask5</Name>
+				</Task>
+				<Task Id="9" Priority="26" CycleTime="100000" AmsPort="356" AdtTasks="true">
+					<Name>PlcTask6</Name>
+				</Task>
 			</Tasks>
 		</System>
 		<Plc>
 			<Project GUID="{0E11E8F0-E697-4E0D-B548-C4884A07BD1D}" Name="FMS_201_Manual" PrjFilePath="FMS_201_Manual\FMS_201_Manual.plcproj" TmcFilePath="FMS_201_Manual\FMS_201_Manual.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="FMS_201_Manual\FMS_201_Manual.tmc" TmcHash="{06559BC2-C289-23AE-CF46-12209751E1B7}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="FMS_201_Manual\FMS_201_Manual.tmc" TmcHash="{4D7A64A9-5B39-61ED-1777-26A22A668BAB}">
 					<Name>FMS_201_Manual Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<UnrestoredVarLinks ImportTime="2023-04-28T17:13:29">
+						<OwnerA Name="InputDst" Prefix="TIPC^FMS_201_Manual^FMS_201_Manual Instance" Type="1">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL1008)">
+								<Link VarA="MAIN.ESTACION.EstacionConectada" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 5^EstacionConectada" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.PaleCodigoBit0" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 7^PaleCodigoBit0" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.PaleCodigoBit1" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 8^PaleCodigoBit1" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.PalePresencia" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 6^PalePresencia" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.PulsadorEmergencia" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^PulsadorEmergencia" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.PulsadorMarcha" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 3^PulsadorMarcha" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.PulsadorParada" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 4^PulsadorParada" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.SelectorManual" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 2^SelectorManual" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL1008)">
+								<Link VarA="MAIN.ESTACION.DetectorPresion" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 2^DetectorPresion" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.PaleCodigoBit2" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^PaleCodigoBit2" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL1008)">
+								<Link VarA="MAIN.ESTACION.AlimentadorDetras" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 8^AlimentadorDetras" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.DescargadorDelante" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 2^DescargadorDelante" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.DescargadorDetras" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^DescargadorDetras" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.DesplazadorDetras" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 7^DesplazadorDetras" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.VerificadorAbajo" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 6^VerificadorAbajo" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.VerificadorArriba" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 5^VerificadorArriba" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.VerticalAbajo" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 4^VerticalAbajo" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.VerticalArriba" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 3^VerticalArriba" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL1008)">
+								<Link VarA="MAIN.ESTACION.AlimentadorDelante" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^AlimentadorDelante" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.PresenciaBaseAlimentador" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 3^PresenciaBaseAlimentador" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.VacioDescargador" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 2^VacioDescargador" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+						<OwnerA Name="OutputSrc" Prefix="TIPC^FMS_201_Manual^FMS_201_Manual Instance" Type="2">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL2008)">
+								<Link VarA="MAIN.ESTACION.CintaMotorActiva" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 5^CintaMotorActiva" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.CintaMotorInvierte" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 6^CintaMotorInvierte" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.CintaRetenedorBaja" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 7^CintaRetenedorBaja" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.CintaSeparadorSube" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 8^CintaSeparadorSube" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.DesconectaEstacion" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^DesconectaEstacion" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.LamparaAlarma" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 2^LamparaAlarma" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.LamparaFaltaMaterial" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 4^LamparaFaltaMaterial" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.LamparaMarcha" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 3^LamparaMarcha" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL2008)">
+								<Link VarA="MAIN.ESTACION.AvisadorSonoro" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^AvisadorSonoro" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL2008)">
+								<Link VarA="MAIN.ESTACION.AlimentadorAdelante" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 7^AlimentadorAdelante" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.DescargadorAdelante" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 1^DescargadorAdelante" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.DescargadorAtras" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 2^DescargadorAtras" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.DescargadorBaja" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 3^DescargadorBaja" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.DesplazadorAdelante" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 6^DesplazadorAdelante" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.EyectorSucciona" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 8^EyectorSucciona" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.RechazadorAdelante" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 4^RechazadorAdelante" Size="1" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.ESTACION.VerificadorBaja" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Channel 5^VerificadaorBaja" Size="1" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
+					<Contexts>
+						<Context>
+							<Id>1</Id>
+							<Name>Default</Name>
+						</Context>
+					</Contexts>
+				</Instance>
+			</Project>
+			<Project File="FMS_201_Estructurado.xti"/>
+			<Project File="FMS_201_Monolítico.xti"/>
+			<Project GUID="{64286027-3588-41F9-A1D6-73A3FA8F2F93}" Name="FMS_201_GEMMA" PrjFilePath="FMS_201_GEMMA\FMS_201_GEMMA.plcproj" TmcFilePath="FMS_201_GEMMA\FMS_201_GEMMA.tmc" ReloadTmc="true" AmsPort="855" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502100" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="FMS_201_GEMMA\FMS_201_GEMMA.tmc" TmcHash="{57C6B866-20C5-6CED-1685-88914330C29E}">
+					<Name>FMS_201_GEMMA Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
-							<Name>MAIN.ESTACION.PulsadorEmergencia</Name>
-							<Comment><![CDATA[Entradas comunes]]></Comment>
+							<Name>MAIN.Estacion.PulsadorEmergencia</Name>
+							<Comment><![CDATA[ Entradas comunes]]></Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.SelectorManual</Name>
+							<Name>MAIN.Estacion.SelectorManual</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.PulsadorMarcha</Name>
+							<Name>MAIN.Estacion.PulsadorMarcha</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.PulsadorParada</Name>
+							<Name>MAIN.Estacion.PulsadorParada</Name>
 							<Comment><![CDATA[ Contacto normalmente cerrado]]></Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.EstacionConectada</Name>
+							<Name>MAIN.Estacion.EstacionConectada</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.DetectorPresion</Name>
+							<Name>MAIN.Estacion.DetectorPresion</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.PalePresencia</Name>
+							<Name>MAIN.Estacion.PalePresencia</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.PaleCodigoBit0</Name>
+							<Name>MAIN.Estacion.PaleCodigoBit0</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.PaleCodigoBit1</Name>
+							<Name>MAIN.Estacion.PaleCodigoBit1</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.PaleCodigoBit2</Name>
+							<Name>MAIN.Estacion.PaleCodigoBit2</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.DescargadorDetras</Name>
-							<Comment><![CDATA[Entradas específicas]]></Comment>
+							<Name>MAIN.Estacion.DescargadorDetras</Name>
+							<Comment><![CDATA[ Entradas específicas]]></Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.DescargadorDelante</Name>
+							<Name>MAIN.Estacion.DescargadorDelante</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.VerticalArriba</Name>
+							<Name>MAIN.Estacion.VerticalArriba</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.VerticalAbajo</Name>
+							<Name>MAIN.Estacion.VerticalAbajo</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.VerificadorArriba</Name>
+							<Name>MAIN.Estacion.VerificadorArriba</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.VerificadorAbajo</Name>
+							<Name>MAIN.Estacion.VerificadorAbajo</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.DesplazadorDetras</Name>
+							<Name>MAIN.Estacion.DesplazadorDetras</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.AlimentadorDetras</Name>
+							<Name>MAIN.Estacion.AlimentadorDetras</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.AlimentadorDelante</Name>
+							<Name>MAIN.Estacion.AlimentadorDelante</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.VacioDescargador</Name>
+							<Name>MAIN.Estacion.VacioDescargador</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.PresenciaBaseAlimentador</Name>
+							<Name>MAIN.Estacion.PresenciaBaseAlimentador</Name>
 							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
 						<Var>
-							<Name>MAIN.ESTACION.DesconectaEstacion</Name>
-							<Comment><![CDATA[Salidas comunes]]></Comment>
+							<Name>MAIN.Estacion.DesconectaEstacion</Name>
+							<Comment><![CDATA[ Salidas comunes]]></Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.LamparaAlarma</Name>
+							<Name>MAIN.Estacion.LamparaAlarma</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.LamparaMarcha</Name>
+							<Name>MAIN.Estacion.LamparaMarcha</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.LamparaFaltaMaterial</Name>
+							<Name>MAIN.Estacion.LamparaFaltaMaterial</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.AvisadorSonoro</Name>
+							<Name>MAIN.Estacion.AvisadorSonoro</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.CintaMotorActiva</Name>
+							<Name>MAIN.Estacion.CintaMotorActiva</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.CintaMotorInvierte</Name>
+							<Name>MAIN.Estacion.CintaMotorInvierte</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.CintaRetenedorBaja</Name>
+							<Name>MAIN.Estacion.CintaRetenedorBaja</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.CintaSeparadorSube</Name>
+							<Name>MAIN.Estacion.CintaSeparadorSube</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.DescargadorAtras</Name>
-							<Comment><![CDATA[Salidas específicas]]></Comment>
+							<Name>MAIN.Estacion.DescargadorAtras</Name>
+							<Comment><![CDATA[ Salidas específicas]]></Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.DescargadorAdelante</Name>
+							<Name>MAIN.Estacion.DescargadorAdelante</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.DescargadorBaja</Name>
+							<Name>MAIN.Estacion.DescargadorBaja</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.RechazadorAdelante</Name>
+							<Name>MAIN.Estacion.RechazadorAdelante</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.VerificadorBaja</Name>
+							<Name>MAIN.Estacion.VerificadorBaja</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.DesplazadorAdelante</Name>
+							<Name>MAIN.Estacion.DesplazadorAdelante</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.AlimentadorAdelante</Name>
+							<Name>MAIN.Estacion.AlimentadorAdelante</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>MAIN.ESTACION.EyectorSucciona</Name>
+							<Name>MAIN.Estacion.EyectorSucciona</Name>
 							<Type>BOOL</Type>
 						</Var>
 					</Vars>
@@ -195,19 +276,17 @@
 							<Id NeedCalleeCall="true">0</Id>
 							<Name>PlcTask</Name>
 							<ManualConfig>
-								<OTCID>#x02010030</OTCID>
+								<OTCID>#x02010090</OTCID>
 							</ManualConfig>
-							<Priority>20</Priority>
+							<Priority>26</Priority>
 							<CycleTime>10000000</CycleTime>
 						</Context>
 					</Contexts>
 					<TaskPouOids>
-						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+						<TaskPouOid Prio="26" OTCID="#x08502101"/>
 					</TaskPouOids>
 				</Instance>
 			</Project>
-			<Project File="FMS_201_Estructurado.xti"/>
-			<Project File="FMS_201_Monolítico.xti"/>
 		</Plc>
 		<Io>
 			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="5.67.250.180.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
@@ -630,7 +709,7 @@
 						<DeviceData>00010543fab4</DeviceData>
 					</Pnp>
 				</AddressInfo>
-				<Image Id="3" AddrType="2" ImageType="3">
+				<Image Id="3" AddrType="1" ImageType="3">
 					<Name>Image</Name>
 				</Image>
 				<Ethernet DeviceDesc="FEC1"/>
@@ -657,59 +736,59 @@
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>
-		<OwnerA Name="TIPC^FMS_201_Manual^FMS_201_Manual Instance">
+		<MappingInfo Identifier="{00000000-2101-0850-0021-500810000403}" Id="#x02030010"/>
+		<OwnerA Name="TIPC^FMS_201_GEMMA^FMS_201_GEMMA Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL1008)">
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.EstacionConectada" VarB="Channel 5^EstacionConectada"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.PaleCodigoBit0" VarB="Channel 7^PaleCodigoBit0"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.PaleCodigoBit1" VarB="Channel 8^PaleCodigoBit1"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.PalePresencia" VarB="Channel 6^PalePresencia"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.PulsadorEmergencia" VarB="Channel 1^PulsadorEmergencia"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.PulsadorMarcha" VarB="Channel 3^PulsadorMarcha"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.PulsadorParada" VarB="Channel 4^PulsadorParada"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.SelectorManual" VarB="Channel 2^SelectorManual"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.EstacionConectada" VarB="Channel 5^EstacionConectada"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.PaleCodigoBit0" VarB="Channel 7^PaleCodigoBit0"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.PaleCodigoBit1" VarB="Channel 8^PaleCodigoBit1"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.PalePresencia" VarB="Channel 6^PalePresencia"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.PulsadorEmergencia" VarB="Channel 1^PulsadorEmergencia"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.PulsadorMarcha" VarB="Channel 3^PulsadorMarcha"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.PulsadorParada" VarB="Channel 4^PulsadorParada"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.SelectorManual" VarB="Channel 2^SelectorManual"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL1008)">
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.DetectorPresion" VarB="Channel 2^DetectorPresion"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.PaleCodigoBit2" VarB="Channel 1^PaleCodigoBit2"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.DetectorPresion" VarB="Channel 2^DetectorPresion"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.PaleCodigoBit2" VarB="Channel 1^PaleCodigoBit2"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.CintaMotorActiva" VarB="Channel 5^CintaMotorActiva"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.CintaMotorInvierte" VarB="Channel 6^CintaMotorInvierte"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.CintaRetenedorBaja" VarB="Channel 7^CintaRetenedorBaja"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.CintaSeparadorSube" VarB="Channel 8^CintaSeparadorSube"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.DesconectaEstacion" VarB="Channel 1^DesconectaEstacion"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.LamparaAlarma" VarB="Channel 2^LamparaAlarma"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.LamparaFaltaMaterial" VarB="Channel 4^LamparaFaltaMaterial"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.LamparaMarcha" VarB="Channel 3^LamparaMarcha"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.CintaMotorActiva" VarB="Channel 5^CintaMotorActiva"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.CintaMotorInvierte" VarB="Channel 6^CintaMotorInvierte"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.CintaRetenedorBaja" VarB="Channel 7^CintaRetenedorBaja"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.CintaSeparadorSube" VarB="Channel 8^CintaSeparadorSube"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.DesconectaEstacion" VarB="Channel 1^DesconectaEstacion"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.LamparaAlarma" VarB="Channel 2^LamparaAlarma"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.LamparaFaltaMaterial" VarB="Channel 4^LamparaFaltaMaterial"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.LamparaMarcha" VarB="Channel 3^LamparaMarcha"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.AvisadorSonoro" VarB="Channel 1^AvisadorSonoro"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.AvisadorSonoro" VarB="Channel 1^AvisadorSonoro"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL1008)">
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.AlimentadorDetras" VarB="Channel 8^AlimentadorDetras"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.DescargadorDelante" VarB="Channel 2^DescargadorDelante"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.DescargadorDetras" VarB="Channel 1^DescargadorDetras"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.DesplazadorDetras" VarB="Channel 7^DesplazadorDetras"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.VerificadorAbajo" VarB="Channel 6^VerificadorAbajo"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.VerificadorArriba" VarB="Channel 5^VerificadorArriba"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.VerticalAbajo" VarB="Channel 4^VerticalAbajo"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.VerticalArriba" VarB="Channel 3^VerticalArriba"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.AlimentadorDetras" VarB="Channel 8^AlimentadorDetras"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.DescargadorDelante" VarB="Channel 2^DescargadorDelante"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.DescargadorDetras" VarB="Channel 1^DescargadorDetras"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.DesplazadorDetras" VarB="Channel 7^DesplazadorDetras"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.VerificadorAbajo" VarB="Channel 6^VerificadorAbajo"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.VerificadorArriba" VarB="Channel 5^VerificadorArriba"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.VerticalAbajo" VarB="Channel 4^VerticalAbajo"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.VerticalArriba" VarB="Channel 3^VerticalArriba"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL1008)">
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.AlimentadorDelante" VarB="Channel 1^AlimentadorDelante"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.PresenciaBaseAlimentador" VarB="Channel 3^PresenciaBaseAlimentador"/>
-				<Link VarA="PlcTask Inputs^MAIN.ESTACION.VacioDescargador" VarB="Channel 2^VacioDescargador"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.AlimentadorDelante" VarB="Channel 1^AlimentadorDelante"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.PresenciaBaseAlimentador" VarB="Channel 3^PresenciaBaseAlimentador"/>
+				<Link VarA="PlcTask Inputs^MAIN.Estacion.VacioDescargador" VarB="Channel 2^VacioDescargador"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.AlimentadorAdelante" VarB="Channel 7^AlimentadorAdelante"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.DescargadorAdelante" VarB="Channel 1^DescargadorAdelante"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.DescargadorAtras" VarB="Channel 2^DescargadorAtras"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.DescargadorBaja" VarB="Channel 3^DescargadorBaja"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.DesplazadorAdelante" VarB="Channel 6^DesplazadorAdelante"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.EyectorSucciona" VarB="Channel 8^EyectorSucciona"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.RechazadorAdelante" VarB="Channel 4^RechazadorAdelante"/>
-				<Link VarA="PlcTask Outputs^MAIN.ESTACION.VerificadorBaja" VarB="Channel 5^VerificadaorBaja"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.AlimentadorAdelante" VarB="Channel 7^AlimentadorAdelante"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.DescargadorAdelante" VarB="Channel 1^DescargadorAdelante"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.DescargadorAtras" VarB="Channel 2^DescargadorAtras"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.DescargadorBaja" VarB="Channel 3^DescargadorBaja"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.DesplazadorAdelante" VarB="Channel 6^DesplazadorAdelante"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.EyectorSucciona" VarB="Channel 8^EyectorSucciona"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.RechazadorAdelante" VarB="Channel 4^RechazadorAdelante"/>
+				<Link VarA="PlcTask Outputs^MAIN.Estacion.VerificadorBaja" VarB="Channel 5^VerificadaorBaja"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

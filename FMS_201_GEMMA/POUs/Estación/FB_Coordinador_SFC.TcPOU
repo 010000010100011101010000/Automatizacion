@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-  <POU Name="FB_Coordinador_SFC" Id="{b557f5bf-c223-426b-b7fc-e7c2f78d1825}" SpecialFunc="None">
+  <POU Name="FB_Coordinador_SFC" Id="{39e99b26-ca1b-4e0c-9027-108f648dd0e2}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_Coordinador_SFC
 VAR_IN_OUT
 
@@ -3127,17 +3127,17 @@ END_VAR
         </XmlArchive>
       </SFC>
     </Implementation>
-    <Action Name="a_LamparaAlarma" Id="{827a1255-c270-4a91-906f-4169e9821d5b}">
+    <Action Name="a_LamparaAlarma" Id="{59612ca8-7fe3-47f0-a41f-70c4610b3503}">
       <Implementation>
         <ST><![CDATA[LamparaAlarma := (Inicial.x AND NOT CondicionInicial AND CLK.Q);]]></ST>
       </Implementation>
     </Action>
-    <Action Name="aLamparaMarcha" Id="{80c3657c-bd57-43b9-b468-2e65657e19a6}">
+    <Action Name="aLamparaMarcha" Id="{5f208487-2a26-447e-a98a-cdcb80d410a6}">
       <Implementation>
         <ST><![CDATA[LamparaMarcha := (Inicial.x AND NOT CondicionInicial AND CLK.Q) OR NOT Inicial.x;]]></ST>
       </Implementation>
     </Action>
-    <Action Name="Inicial_exit" Id="{ebbdd9f6-5c26-4da6-85dd-20c8d4df5c88}">
+    <Action Name="Inicial_exit" Id="{943ebe45-7cb7-4429-86bb-557c2de4fe51}">
       <Implementation>
         <ST><![CDATA[// Al iniciar una tarea se actualiza las unidades pendientes
 IF (UnidadesPendientes = 0) THEN
@@ -3145,7 +3145,7 @@ IF (UnidadesPendientes = 0) THEN
 END_IF]]></ST>
       </Implementation>
     </Action>
-    <Action Name="NumeroUds_entry" Id="{28d332f6-9569-4c1e-90cb-5f3fe81e87bb}">
+    <Action Name="NumeroUds_entry" Id="{1a8f7e27-62e1-4e59-a16c-778c45ece5ea}">
       <Implementation>
         <ST><![CDATA[// Al completar una transferencia actualizamos los valores de los contadores
 UnidadesRealizadas := UnidadesRealizadas + 1;

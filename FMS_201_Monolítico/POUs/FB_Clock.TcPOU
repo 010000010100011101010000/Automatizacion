@@ -27,5 +27,9 @@ END_IF
 // Definimos la condición de entrada IN cuando EN esté TRUE (siempre) y no esté activa la salida del temporizador
 Timer(IN:= EN AND NOT Timer.Q, PT := PT, ET => ET);]]></ST>
     </Implementation>
+    <LineIds Name="FB_Clock">
+      <LineId Id="3" Count="7" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

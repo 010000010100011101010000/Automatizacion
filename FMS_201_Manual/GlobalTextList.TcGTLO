@@ -26,6 +26,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"736"</v>
+              <v n="TextDefault">"ALIMENTACIÓN DE LA BASE"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"789"</v>
               <v n="TextDefault">"Alimentador "</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -167,6 +172,21 @@ Presion"</v>
             <o>
               <v n="TextID">"399"</v>
               <v n="TextDefault">"FMS 201"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"707"</v>
+              <v n="TextDefault">"FMS-201"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"652"</v>
+              <v n="TextDefault">"FMS-201		ALIMENTACIÓN DE LA BASE"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"847"</v>
+              <v n="TextDefault">"Manual"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
