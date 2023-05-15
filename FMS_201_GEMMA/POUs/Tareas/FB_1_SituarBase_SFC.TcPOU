@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-  <POU Name="FB_1_SituarBase_SFC" Id="{1cb3fea5-a49f-4760-bbc0-c2829054e78b}" SpecialFunc="None">
+  <POU Name="FB_1_SituarBase_SFC" Id="{276a140a-178d-422b-a4dd-c4a88a49affb}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_1_SituarBase_SFC
 VAR_INPUT
 	
@@ -14,6 +14,7 @@ VAR_INPUT
 	
 	// Entradas
 	PalePresencia: BOOL;
+	TpoCintaDelSensorAlTope: TIME;
 	
 END_VAR
 VAR_OUTPUT
@@ -689,7 +690,7 @@ END_VAR
                         <o>
                           <v n="AttributeId">{38391c6d-6d4a-42f8-8ee7-9f45e5adafa8}</v>
                           <o n="Value" t="StringValue">
-                            <v n="Value">"BasePresencia.t&gt;T#400ms"</v>
+                            <v n="Value">"BasePresencia.t&gt;TpoCintaDelSensorAlTope"</v>
                             <v n="DefaultValue">""</v>
                           </o>
                           <v n="Id">182L</v>

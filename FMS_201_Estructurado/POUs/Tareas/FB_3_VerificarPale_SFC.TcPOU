@@ -16,6 +16,9 @@ VAR_INPUT
 	VerificadorAbajo: BOOL;
 	VerificadorArriba: BOOL;
 	DesplazadorDetras: BOOL;
+	TpoVerificador: TIME;
+	TpoDesplazador: TIME;
+	TpoRechazador: TIME;
 	
 END_VAR
 VAR_OUTPUT
@@ -460,7 +463,7 @@ END_VAR
                                     <o>
                                       <v n="AttributeId">{38391c6d-6d4a-42f8-8ee7-9f45e5adafa8}</v>
                                       <o n="Value" t="StringValue">
-                                        <v n="Value">"NOT VerificadorAbajo AND Verificacion.t&lt;T#500ms"</v>
+                                        <v n="Value">"NOT VerificadorAbajo AND Verificacion.t&lt;TpoVerificador"</v>
                                         <v n="DefaultValue">""</v>
                                       </o>
                                       <v n="Id">1218L</v>
@@ -880,7 +883,7 @@ END_VAR
                                     <o>
                                       <v n="AttributeId">{38391c6d-6d4a-42f8-8ee7-9f45e5adafa8}</v>
                                       <o n="Value" t="StringValue">
-                                        <v n="Value">"DesplazarMalo.t&gt;T#400ms"</v>
+                                        <v n="Value">"DesplazarMalo.t&gt;TpoDesplazador"</v>
                                         <v n="DefaultValue">""</v>
                                       </o>
                                       <v n="Id">1507L</v>
@@ -1117,7 +1120,7 @@ END_VAR
                                     <o>
                                       <v n="AttributeId">{38391c6d-6d4a-42f8-8ee7-9f45e5adafa8}</v>
                                       <o n="Value" t="StringValue">
-                                        <v n="Value">"Desechar.t&gt;T#500ms AND DesplazadorDetras"</v>
+                                        <v n="Value">"Desechar.t&gt;TpoRechazador AND DesplazadorDetras"</v>
                                         <v n="DefaultValue">""</v>
                                       </o>
                                       <v n="Id">1633L</v>
@@ -1878,7 +1881,7 @@ END_VAR
                                     <o>
                                       <v n="AttributeId">{38391c6d-6d4a-42f8-8ee7-9f45e5adafa8}</v>
                                       <o n="Value" t="StringValue">
-                                        <v n="Value">"DesplazarBueno.t&gt;T#400ms"</v>
+                                        <v n="Value">"DesplazarBueno.t&gt;TpoDesplazador"</v>
                                         <v n="DefaultValue">""</v>
                                       </o>
                                       <v n="Id">1646L</v>

@@ -377,7 +377,7 @@ END_VAR
                   <v n="Id">{1c5c6e05-2bb7-4258-bcee-fd16a540c63c}</v>
                   <v n="Identifier">"Specific"</v>
                   <v n="Parent">{00000000-0000-0000-0000-000000000000}</v>
-                  <v n="Description">"Element type specific properties"</v>
+                  <v n="Description">"Propiedades específicas para el tipo de elemento"</v>
                 </o>
                 <v>20f0fc67-978d-438b-979f-eef294f34ee4</v>
                 <o>
@@ -385,7 +385,7 @@ END_VAR
                   <v n="Id">{20f0fc67-978d-438b-979f-eef294f34ee4}</v>
                   <v n="Identifier">"Actions"</v>
                   <v n="Parent">{1c5c6e05-2bb7-4258-bcee-fd16a540c63c}</v>
-                  <v n="Description">"Action definitions"</v>
+                  <v n="Description">"Definiciones de acción"</v>
                 </o>
                 <v>6f37ae05-4d8f-4ddc-9e69-c0e6bd6962c2</v>
                 <o>
@@ -393,7 +393,7 @@ END_VAR
                   <v n="Id">{6f37ae05-4d8f-4ddc-9e69-c0e6bd6962c2}</v>
                   <v n="Identifier">"Common"</v>
                   <v n="Parent">{00000000-0000-0000-0000-000000000000}</v>
-                  <v n="Description">"Common properties"</v>
+                  <v n="Description">"Configuración general"</v>
                 </o>
                 <v>d336ba06-8a67-4e6b-9697-50f83ba6bdde</v>
                 <o>
@@ -401,7 +401,7 @@ END_VAR
                   <v n="Id">{d336ba06-8a67-4e6b-9697-50f83ba6bdde}</v>
                   <v n="Identifier">"Times"</v>
                   <v n="Parent">{1c5c6e05-2bb7-4258-bcee-fd16a540c63c}</v>
-                  <v n="Description">"Time definitions"</v>
+                  <v n="Description">"Definiciones de tiempo"</v>
                 </o>
               </d2>
               <d2 n="Attributes" ckt="Guid" cvt="SFCAttributeDescription">
@@ -415,7 +415,7 @@ END_VAR
                   <v n="Id">{01580b27-6378-448b-8ecb-0e4b795b58d6}</v>
                   <v n="Identifier">"Exclude"</v>
                   <v n="Parent">{6f37ae05-4d8f-4ddc-9e69-c0e6bd6962c2}</v>
-                  <v n="Description">"Exclude this element from build"</v>
+                  <v n="Description">"Excluye el elemento de la compilación"</v>
                 </o>
                 <v>23bdaa98-72ec-41f7-817b-9dede5697086</v>
                 <o>
@@ -427,7 +427,7 @@ END_VAR
                   <v n="Id">{23bdaa98-72ec-41f7-817b-9dede5697086}</v>
                   <v n="Identifier">"Parallel"</v>
                   <v n="Parent">{1c5c6e05-2bb7-4258-bcee-fd16a540c63c}</v>
-                  <v n="Description">"Sets the branch to parallel mode"</v>
+                  <v n="Description">"Cambia la rama a paralelo"</v>
                 </o>
                 <v>38391c6d-6d4a-42f8-8ee7-9f45e5adafa8</v>
                 <o>
@@ -439,7 +439,7 @@ END_VAR
                   <v n="Id">{38391c6d-6d4a-42f8-8ee7-9f45e5adafa8}</v>
                   <v n="Identifier">"Name"</v>
                   <v n="Parent">{6f37ae05-4d8f-4ddc-9e69-c0e6bd6962c2}</v>
-                  <v n="Description">"Name of the element"</v>
+                  <v n="Description">"Nombre del elemento"</v>
                 </o>
                 <v>62e1754b-7629-4e63-9cec-10ae0c536f1f</v>
                 <o>
@@ -451,7 +451,7 @@ END_VAR
                   <v n="Id">{62e1754b-7629-4e63-9cec-10ae0c536f1f}</v>
                   <v n="Identifier">"Duplication"</v>
                   <v n="Parent">{1c5c6e05-2bb7-4258-bcee-fd16a540c63c}</v>
-                  <v n="Description">"Copies the implementation of step actions or transitions with the element. Otherwise, copies the reference to an existing implementation."</v>
+                  <v n="Description">"Copia la implementación de acciones de paso o transiciones con el elemento. En caso contrario, la referencia se copia a una implementación existente."</v>
                 </o>
                 <v>6844a48e-46c2-4cc8-a185-a478f3b99cc0</v>
                 <o>
@@ -463,7 +463,7 @@ END_VAR
                   <v n="Id">{6844a48e-46c2-4cc8-a185-a478f3b99cc0}</v>
                   <v n="Identifier">"InitStep"</v>
                   <v n="Parent">{1c5c6e05-2bb7-4258-bcee-fd16a540c63c}</v>
-                  <v n="Description">"Sets the step as the initial step"</v>
+                  <v n="Description">"Define el paso como paso inicial"</v>
                 </o>
                 <v>700a583f-b4d4-43e4-8c14-629c7cd3bec8</v>
                 <o>
@@ -475,7 +475,7 @@ END_VAR
                   <v n="Id">{700a583f-b4d4-43e4-8c14-629c7cd3bec8}</v>
                   <v n="Identifier">"MainAction"</v>
                   <v n="Parent">{20f0fc67-978d-438b-979f-eef294f34ee4}</v>
-                  <v n="Description">"Name of the action to be called if the step is active"</v>
+                  <v n="Description">"Nombre de la acción que se llamará cuando el paso está activo"</v>
                 </o>
                 <v>7d894980-aeea-405c-a0f6-e2b26429c58f</v>
                 <o>
@@ -487,7 +487,7 @@ END_VAR
                   <v n="Id">{7d894980-aeea-405c-a0f6-e2b26429c58f}</v>
                   <v n="Identifier">"Comment"</v>
                   <v n="Parent">{6f37ae05-4d8f-4ddc-9e69-c0e6bd6962c2}</v>
-                  <v n="Description">"Comment of the element"</v>
+                  <v n="Description">"Comentario del elemento"</v>
                 </o>
                 <v>8294df19-5962-4dee-a874-1051dabb0e3e</v>
                 <o>
@@ -499,7 +499,7 @@ END_VAR
                   <v n="Id">{8294df19-5962-4dee-a874-1051dabb0e3e}</v>
                   <v n="Identifier">"Monitoring"</v>
                   <v n="Parent">{1c5c6e05-2bb7-4258-bcee-fd16a540c63c}</v>
-                  <v n="Description">"Indicates transition monitoring setting."</v>
+                  <v n="Description">"Indica la configuración de supervisión de transición."</v>
                 </o>
                 <v>a2621e18-7de3-4ea6-ae6d-89e9e0b7befd</v>
                 <o>
@@ -511,7 +511,7 @@ END_VAR
                   <v n="Id">{a2621e18-7de3-4ea6-ae6d-89e9e0b7befd}</v>
                   <v n="Identifier">"ExitAction"</v>
                   <v n="Parent">{20f0fc67-978d-438b-979f-eef294f34ee4}</v>
-                  <v n="Description">"Name of the action to be called if the step is deactivated"</v>
+                  <v n="Description">"Nombre de la acción que se va a llamar si se desactiva el paso"</v>
                 </o>
                 <v>a6b08bd8-b696-47e3-9cbf-7408b61c9ff8</v>
                 <o>
@@ -523,7 +523,7 @@ END_VAR
                   <v n="Id">{a6b08bd8-b696-47e3-9cbf-7408b61c9ff8}</v>
                   <v n="Identifier">"EntryAction"</v>
                   <v n="Parent">{20f0fc67-978d-438b-979f-eef294f34ee4}</v>
-                  <v n="Description">"Name of the action to be called if the step is activated"</v>
+                  <v n="Description">"Nombre de la acción que se va a llamar si se activa el paso"</v>
                 </o>
                 <v>b693554c-1b01-4a8d-afde-9e3a46f7465d</v>
                 <o>
@@ -535,7 +535,7 @@ END_VAR
                   <v n="Id">{b693554c-1b01-4a8d-afde-9e3a46f7465d}</v>
                   <v n="Identifier">"MaxTime"</v>
                   <v n="Parent">{d336ba06-8a67-4e6b-9697-50f83ba6bdde}</v>
-                  <v n="Description">"Defines the maximal active time for the step"</v>
+                  <v n="Description">"Define el tiempo máximo del paso"</v>
                 </o>
                 <v>bc882c11-1e91-4dd8-a6b8-2075724ed18b</v>
                 <o>
@@ -547,7 +547,7 @@ END_VAR
                   <v n="Id">{bc882c11-1e91-4dd8-a6b8-2075724ed18b}</v>
                   <v n="Identifier">"Symbol"</v>
                   <v n="Parent">{6f37ae05-4d8f-4ddc-9e69-c0e6bd6962c2}</v>
-                  <v n="Description">"Symbol configuration setting of the element"</v>
+                  <v n="Description">"Ajustes de configuración de símbolo del elemento"</v>
                 </o>
                 <v>cacf1a68-236e-47c2-b7b1-1cf9199718cb</v>
                 <o>
@@ -559,7 +559,7 @@ END_VAR
                   <v n="Id">{cacf1a68-236e-47c2-b7b1-1cf9199718cb}</v>
                   <v n="Identifier">"MinTime"</v>
                   <v n="Parent">{d336ba06-8a67-4e6b-9697-50f83ba6bdde}</v>
-                  <v n="Description">"Defines the minimal active time for the step"</v>
+                  <v n="Description">"Define el tiempo mínimo del paso"</v>
                 </o>
                 <v>e174fc0d-80b0-4a9e-a530-ca239c249a50</v>
                 <o>
@@ -571,7 +571,7 @@ END_VAR
                   <v n="Id">{e174fc0d-80b0-4a9e-a530-ca239c249a50}</v>
                   <v n="Identifier">"Qualifier"</v>
                   <v n="Parent">{1c5c6e05-2bb7-4258-bcee-fd16a540c63c}</v>
-                  <v n="Description">"Qualifier of the action association"</v>
+                  <v n="Description">"Calificador de la asociación de acción"</v>
                 </o>
               </d2>
               <d2 n="EnumTemplates" ckt="Guid" cvt="EnumValueTemplate">
@@ -760,9 +760,5 @@ PaleCodigo.2 := PaleCodigoBit2;
         </TypeList>
       </XmlArchive>
     </ObjectProperties>
-    <LineIds Name="FB_Estacion.aPaleCodigo">
-      <LineId Id="2" Count="2" />
-      <LineId Id="1" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>

@@ -8,7 +8,12 @@ VAR_INPUT
 	EstadoPausa: BOOL;
 	EstadoReinicia: BOOL;
 	UnidadesSolicitadas: UINT := 3;
-	TpoEstabilidad: TIME := T#500MS;
+	TpoCintaDelSensorAlTope: TIME := T#400MS;
+	TpoVerificador: TIME := T#2000MS;
+	TpoDesplazador: TIME := T#400MS;
+	TpoRechazador: TIME := T#500MS;
+	TpoCintaFuera: TIME := T#2000MS;
+	TpoRetenedorBaja: TIME := T#500MS;
 	
 END_VAR
 VAR_OUTPUT
@@ -149,7 +154,8 @@ IF (Director.Modo <> E_GEMMA.F4) THEN
 		SFCReset := EstadoReinicia,
 		Ack := NOT Coordinador.SituaBase,
 		Execute := Coordinador.SituaBase,
-		PalePresencia := PalePresencia
+		PalePresencia := PalePresencia,
+		TpoCintaDelSensorAlTope := TpoCintaDelSensorAlTope,
 	);
 		
 	AlimentarBase(
@@ -170,6 +176,9 @@ IF (Director.Modo <> E_GEMMA.F4) THEN
 		VerificadorAbajo := VerificadorAbajo,
 		VerificadorArriba := VerificadorArriba,
 		DesplazadorDetras := DesplazadorDetras,
+		TpoVerificador := TpoVerificador,
+		TpoDesplazador := TpoDesplazador,
+		TpoRechazador := TpoRechazador,
 	);
 	
 	InsertarBasePale(
@@ -189,6 +198,8 @@ IF (Director.Modo <> E_GEMMA.F4) THEN
 		SFCReset := EstadoReinicia,
 		Ack := NOT Coordinador.TransfiereBase,
 		Execute := Coordinador.TransfiereBase,
+		TpoCintaFuera := TpoCintaFuera,
+		TpoRetenedorBaja := TpoRetenedorBaja,
 	);
 	
 	// Acciones
